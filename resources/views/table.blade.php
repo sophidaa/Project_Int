@@ -9,7 +9,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
@@ -80,7 +80,7 @@
 
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">คำขอใช้ระบบ</h1>
+                    <h1 class="h3 mb-0 text-gray-800">รายการ อปท.ที่ใช้งาน</h1>
                    
                 </div>
 
@@ -98,7 +98,7 @@
                                             <th>จังหวัด</th>
                                             <th>ชื่อ อปท. ที่ขอใช้</th>
                                             <th>หมายเหตุ</th>
-                                            <th>จัดการ (อนุมัติ/ไม่อนุมัติ)</th>
+                                            <th>รายละเอียด</th>
                                         </tr>
                                     </thead>
                                         <tr>
