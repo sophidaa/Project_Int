@@ -35,3 +35,7 @@ Route::middleware([
 Route::get('/table',function(){
     return view('table');
 })->name('table');
+
+Route::get('/wrequest',function(){
+    return view('wrequest');
+})->name('wrequest');
