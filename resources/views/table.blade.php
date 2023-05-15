@@ -181,6 +181,7 @@
   <link href="{{ asset('admin/css/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css"></link>
   <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ asset('js/jquery.min.js') }}"></script>
+  <link rel='stylesheet' href='https://demo.themesberg.com/pixel-pro/css/pixel.css'>
     </section>
 
     <div id="myModal" class="modal">
@@ -195,11 +196,41 @@
 								</button>
 						</div>
 						<div class="modal-body">
-								Welcome, Websolutionstuff !!
-						</div>
-					</div>
-				</div>
-			</div>
+
+                    <div class="section section-md py-5">
+                     <div class="container">
+       
+       
+       
+       <!-- Title  -->
+      <div class="row">
+         <div class="col-md-4 text-center mx-auto">
+         </div>
+      </div>
+      <div class="row mt-4">
+         <div class="col-md-10 mx-auto">
+            <!-- Timeline -->
+            <div class="timeline timeline-one">
+               <!-- Timeline Item 1 -->
+               <div class="timeline-item">
+                  <h5 class="my-3">เริ่มขอใช้งาน</h5>
+                  <p>เริ่มขอใช้งาน (รายละเอียด ผู้ขอ)วันที.</p>
+               </div>
+               <!-- Timeline Item 2 -->
+               <div class="timeline-item">
+                  <h5 class="my-3">อัพเดตโฟร์งาน</h5>
+                  <p>อัพเดตโฟร์งาน (รายละเอียด รูป)วันที</p>
+               </div>
+               <!-- Timeline Item 3 -->
+               <div class="timeline-item">
+                  <h5 class="my-3">เริ่มใช้จริง</h5>
+                  <p>เริ่มใช้จริง (รายละเอียด ไฟล์ pdf) วันที</p>
+               </div>
+            </div>
+            <!--End of Timeline-->
+         </div>
+      </div>
+</div>
 
 </div>
 

@@ -27,7 +27,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/dashboard';
 
     /**
      * Create a new controller instance.
@@ -50,9 +50,9 @@ class LoginController extends Controller
         if (auth()->attempt(array('email'=> $input['email'], 'password' => $input['password']))) {
 
             if (auth()->user()->is_admin == 1) {
-                return redirect()->route('admin.home');
+                return redirect()->route('dashboard');
             } else {
-                return redirect()->route('home');
+                return redirect()->route('dashboard');
             }
         } else {
             return redirect()->rout('login')->with('error', 'Email-address and Password are wrong.');
