@@ -186,7 +186,7 @@
 
     <div id="myModal" class="modal">
  <!-- Modal content -->
- <div class="modal-dialog modal-lg" role="document">
+ <div class="modal-dialog-scrollable .modal-content" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
 							<h5 class="modal-title" id="demoModalLabel">รายละเอียด อปท.</h5>
@@ -214,7 +214,7 @@
                <!-- Timeline Item 1 -->
                <div class="timeline-item">
                   <h5 class="my-3">เริ่มขอใช้งาน</h5>
-                  <p>เริ่มขอใช้งาน (รายละเอียด ผู้ขอ)วันที.</p>
+                  <p>เริ่มขอใช้งาน (รายละเอียด ผู้ขอ)วันที</p>
                </div>
                <!-- Timeline Item 2 -->
                <div class="timeline-item">
