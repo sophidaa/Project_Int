@@ -1,53 +1,75 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Bootstrap 4 Timeline</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
-<link rel='stylesheet' href='https://demo.themesberg.com/pixel-pro/css/pixel.css'>
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="section section-md py-5">
-   <div class="container">
-       <!-- Title  -->
-      <div class="row">
-         <div class="col-md-4 text-center mx-auto">
-         </div>
-      </div>
-      <div class="row mt-4">
-         <div class="col-md-10 mx-auto">
-            <!-- Timeline -->
-            <div class="timeline timeline-one">
-               <!-- Timeline Item 1 -->
-               <div class="timeline-item">
-                  <span class="icon icon-info icon-lg"><i class="fab fa-react"></i></span>
-                  <h5 class="my-3">React</h5>
-                  <p>เริ่มขอใช้งาน (รายละเอียด ผู้ขอ)วันที.</p>
-               </div>
-               <!-- Timeline Item 2 -->
-               <div class="timeline-item">
-                  <span class="icon icon-secondary"><i class="fab fa-vuejs"></i></span>
-                  <h5 class="my-3">VueJs</h5>
-                  <p>อัพเดตโฟร์งาน (รายละเอียด รูป)วันที</p>
-               </div>
-               <!-- Timeline Item 3 -->
-               <div class="timeline-item">
-                  <span class="icon icon-danger"><i class="fab fa-angular"></i></span>
-                  <h5 class="my-3">Angular</h5>
-                  <p>เริ่มใช้จริง (รายละเอียด ไฟล์ pdf) วันที</p>
-               </div>
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
             </div>
-            <!--End of Timeline-->
-         </div>
-      </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="login.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 </body>
-</html>
-
-
-<link href="{{ asset('admin/css/sb-admin-2.min.css') }}" rel="stylesheet"></link>
+    <link href="{{ asset('admin/css/sb-admin-2.min.css') }}" rel="stylesheet"></link>
   <link href="{{ asset('admin/css/bootstrap.min.css') }}" rel="stylesheet"></link>
   <link href="{{ asset('admin/css/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css"></link>
   <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ asset('js/jquery.min.js') }}"></script>
+  <link rel='stylesheet' href='https://demo.themesberg.com/pixel-pro/css/pixel.css'>
+    </section>
+
+<div id="myModal" class="modal">
+ <!-- Modal content -->
+ <div class="modal-dialog-scrollable .modal-content" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="demoModalLabel">รายละเอียด อปท.</h5>
+								<button type="button" class="close" data-dismiss="modal" aria- 
+                                label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+						</div>
+                        <div class="modal-body">
+                        <div class="section section-md py-5">
+                       <div class="container">
+                    </div>
+
+    </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[1];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
