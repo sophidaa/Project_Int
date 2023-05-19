@@ -17,10 +17,11 @@
         </a>
 
         <!-- Divider -->
-        <hr class="sidebar-divider my-0">
+        
 
         <!-- Nav Item - Dashboard -->
-        <li class="nav-item active">
+        <hr class="sidebar-divider my-0">
+        <li class="nav-item">
             <a class="nav-link" href="dashboard">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>คำขอใช้ระบบ</span></a>

@@ -19,7 +19,7 @@
         
 
         <!-- Nav Item - Dashboard -->
-        <hr class="sidebar-divider ml-0">
+        <hr class="sidebar-divider my-0">
         <li class="nav-item active">
             <a class="nav-link" href="dashboard">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -27,15 +27,15 @@
         </li>
 
         <!-- Divider -->
-        <hr class="sidebar-divider ml-0">
-        <li class="nav-item">
+        <hr class="sidebar-divider my-0">
+        <li class="nav-item ">
             <a class="nav-link" href="table">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>รายการ อปท.ที่ใช้งาน</span></a>
         </li>
 
         <!-- Divider -->
-        <hr class="sidebar-divider d-none d-md-block ">
+        <hr class="sidebar-divider my-0">
 
     </ul>
     <!-- End of Sidebar -->
