@@ -6,14 +6,14 @@
 <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-warning sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
-            <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            <div class="sidebar-brand-text mx-3">Admin</sup></div>
         </a>
 
         <!-- Divider -->
@@ -27,7 +27,7 @@
         </li>
 
         <!-- Divider -->
-        <hr class="sidebar-divider">
+        <hr class="sidebar-divider my-0">
         <li class="nav-item">
             <a class="nav-link" href="table">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -79,9 +79,8 @@
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">รายการ อปท. ที่ใช้งาน</h1>
-                   
+                <div>
+                        <h3 class="font-semibold text-gray-800 leading-tight">รายการอปท.ที่ใช้งาน</h3>
                 </div>
 
                 <!-- table คำขอใช้ระบบ -->
@@ -182,7 +181,7 @@
   <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ asset('js/jquery.min.js') }}"></script>
   <link rel='stylesheet' href='https://demo.themesberg.com/pixel-pro/css/pixel.css'>
-    </section>
+  
 
     <div id="myModal" class="modal">
  <!-- Modal content -->

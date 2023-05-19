@@ -1,27 +1,25 @@
 <x-app-layout>
-    <!-- <x-slot name="header">
-        <h2 class="text-xl font-semibold leading-tight text-gray-800">
-        </h2>
-    </x-slot> -->
+    
 
-<!-- Page Wrapper -->
-<div id="wrapper">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-warning sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
-            <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            <div class="sidebar-brand-text mx-3">Admin</div>
         </a>
 
         <!-- Divider -->
-        <hr class="sidebar-divider my-0">
+        
 
         <!-- Nav Item - Dashboard -->
+        <hr class="sidebar-divider ml-0">
         <li class="nav-item active">
             <a class="nav-link" href="dashboard">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -29,7 +27,7 @@
         </li>
 
         <!-- Divider -->
-        <hr class="sidebar-divider">
+        <hr class="sidebar-divider ml-0">
         <li class="nav-item">
             <a class="nav-link" href="table">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -148,16 +146,16 @@
     </div>
     <!-- End of Content Wrapper -->
 
-</div>
-<!-- End of Page Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
 
-<!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="#page-top">
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
-</a>
+    </a>
 
-<!-- Logout Modal-->
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -174,15 +172,15 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
 
 
-</body>
+    </body>
     <link href="{{ asset('admin/css/sb-admin-2.min.css') }}" rel="stylesheet"></link>
   <link href="{{ asset('admin/css/bootstrap.min.css') }}" rel="stylesheet"></link>
   <link href="{{ asset('admin/css/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css"></link>
   <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ asset('js/jquery.min.js') }}"></script>
-    </section>
-
+  <link rel='stylesheet' href='https://demo.themesberg.com/pixel-pro/css/pixel.css'>
+  
 </x-app-layout>

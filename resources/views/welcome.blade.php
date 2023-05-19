@@ -89,7 +89,7 @@
                 <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
             </div>
             </div>
-            <button class="btn btn-success btn-user btn-block" id="myBtn">ส่งคำขอ</button>
+            <button class="btn btn-warning btn-user btn-block" id="myBtn">ส่งคำขอ</button>
 
     </div>
         </form>
@@ -115,14 +115,7 @@
 
 
 </body>
-    <link href="{{ asset('admin/css/sb-admin-2.min.css') }}" rel="stylesheet"></link>
-  <link href="{{ asset('admin/css/bootstrap.min.css') }}" rel="stylesheet"></link>
-  <link href="{{ asset('admin/css/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css"></link>
-  <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('js/jquery.min.js') }}"></script>
-  
-    </section>
-
+    
     <!-- Modal content -->
 <div id="myModal" class="modal">
  
@@ -138,7 +131,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-        ส่งคำขอสำเร็จ กรุณารอเจ้าหน้าที่ติดต่อกลับไปภายหลัง
+        ส่งคำขอสำเร็จ กรุณารอเจ้าหน้าที่ติดต่อกลับไปในภายหลัง
       </div>
 
     </div>
