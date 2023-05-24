@@ -20,7 +20,7 @@
 
         <!-- Nav Item - Dashboard -->
         <hr class="sidebar-divider my-0">
-        <li class="nav-item active">
+        <li class="nav-item">
             <a class="nav-link" href="dashboard">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>คำขอใช้ระบบ</span></a>

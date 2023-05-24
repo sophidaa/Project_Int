@@ -39,3 +39,7 @@ Route::get('/table',function(){
 Route::get('/wrequest',function(){
     return view('wrequest');
 })->name('wrequest');
+
+Route::get('/update',function(){
+    return view('update');
+})->name('update');

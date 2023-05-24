@@ -108,7 +108,8 @@
                                             <td> </td>
                                             <td> </td>
                                             <td> </td>
-                                            <td> <button class="btn btn-success btn-user btn-block" id="myBtn">รายละเอียด</button> </td>
+                                            <td>  <button  class="btn btn-success btn-user btn-block" id="myBtn" >รายละเอียด </button> </td>
+                                                
                                         </tr>
                                         <tr>
                                             <td> </td>
@@ -186,7 +187,7 @@
 
     <div id="myModal" class="modal">
  <!-- Modal content -->
- <div class="modal-dialog-scrollable .modal-content" role="document">
+    <div class="modal-dialog-scrollable .modal-content" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
 							<h5 class="modal-title" id="demoModalLabel">รายละเอียด อปท.</h5>
@@ -196,73 +197,120 @@
 								</button>
 						</div>
 						<div class="modal-body">
+                            
 
-                    <div class="section section-md py-5">
-                     <div class="container">
-       
-       
-       
-       <!-- Title  -->
-      <div class="row">
-         <div class="col-md-4 text-center mx-auto">
-         </div>
-      </div>
-      <div class="row mt-4">
-         <div class="col-md-10 mx-auto">
-            <!-- Timeline -->
-            <div class="timeline timeline-one">
-               <!-- Timeline Item 1 -->
-               <div class="timeline-item">
-                  <h5 class="my-3">เริ่มขอใช้งาน</h5>
-                  <p>เริ่มขอใช้งาน (รายละเอียด ผู้ขอ)วันที</p>
-               </div>
-               <!-- Timeline Item 2 -->
-               <div class="timeline-item">
-                  <h5 class="my-3">อัพเดตโฟร์งาน</h5>
-                  <p>อัพเดตโฟร์งาน (รายละเอียด รูป)วันที</p>
-                  <a href=" ">
-                  <h1 class="h6 mb-4">Update</h1>
-                  </a>
-               </div>
-               <!-- Timeline Item 3 -->
-               <div class="timeline-item">
-                  <h5 class="my-3">เริ่มใช้จริง</h5>
-                  <p>เริ่มใช้จริง (รายละเอียด ไฟล์ pdf) วันที</p>
-               </div>
-            </div>
-            <!--End of Timeline-->
-         </div>
-      </div>
-</div>
-
-</div>
+                            <!-- Title  -->
+                                <div class="row">
+                                <div class="col-md-4 text-center mx-auto">
+                            </div>
+                        </div>
+                                <div class="row mt-4">
+                                <div class="col-md-10 mx-auto">
+                                <!-- Timeline -->
+                                    <div class="timeline timeline-one">
+                                <!-- Timeline Item 1 -->
+                                    <div class="timeline-item">
+                                        <h5 class="my-3">เริ่มขอใช้งาน</h5>
+                                        <p>เริ่มขอใช้งาน (รายละเอียด ผู้ขอ)วันที</p>
+                                    </div>
+                                <!-- Timeline Item 2 -->
+                                    <div class="timeline-item">
+                                        <h5 class="my-3">อัพเดตโฟร์งาน</h5>
+                                        <button class = "btn btn-warning" id="openModalBtn">Open Modal</button>
+                                        
+                                        <body>
+                                            <div id="updateModal" class="modal">
+                                                <div class="modal-dialog-scrollable .modal-content" role="document">
+                                                    <div class="modal-content">
+                                                        <span class="close">&times;</span>
+                                                        <h2>Upload File Progress</h2>
+                                                        <input type="file" id="fileInput">
+                                                        <button id="uploadBtn">Upload</button>
+                                                        <div id="progressBar">
+                                                            <div id="progress"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </body>
+                                    </div>
+                                <!-- Timeline Item 3 -->
+                                    <div class="timeline-item">
+                                        <h5 class="my-3">เริ่มใช้จริง</h5>
+                                        <p>เริ่มใช้จริง (รายละเอียด ไฟล์ pdf) วันที</p>
+                                    </div>
+                                </div>
+                            <!--End of Timeline-->
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
 
 <script>
-// Get the modal
-var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+    // Get the modal
+    var modal = document.getElementById("myModal");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[1];
+    
 
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-modal.style.display = "block";
-}
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-modal.style.display = "none";
-}
+    
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-if (event.target == modal) {
-modal.style.display = "none";
-}
-}
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[1];
+
+
+    var closeButton = document.getElementsByClassName('close')[1];
+    var uploadButton = document.getElementById('uploadBtn');
+    var fileInput = document.getElementById('fileInput');
+    var progressBar = document.getElementById('progress');
+
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+    modal.style.display = "none";
+    }
+    }
 </script>
+
+<script>
+
+    var updatemodal = document.getElementById('updateModal');
+
+    var updatebtn = document.getElementById("openModalBtn");
+
+    openModalBtn.addEventListener('click', function() {
+    modal.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', function() {
+    modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+    });
+
+    uploadButton.addEventListener('click', function() {
+    // Perform file upload and progress tracking logic here
+    // You can use JavaScript's File API or AJAX requests to handle the file upload and track progress
+    });
 </script>
+
 </x-app-layout>
