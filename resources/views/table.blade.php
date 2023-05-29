@@ -17,10 +17,11 @@
         </a>
 
         <!-- Divider -->
-        <hr class="sidebar-divider my-0">
+        
 
         <!-- Nav Item - Dashboard -->
-        <li class="nav-item active">
+        <hr class="sidebar-divider my-0">
+        <li class="nav-item">
             <a class="nav-link" href="dashboard">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>คำขอใช้ระบบ</span></a>
@@ -107,7 +108,7 @@
                                             <td> </td>
                                             <td> </td>
                                             <td> </td>
-                                            <td> <button class="btn btn-success btn-user btn-block" id="myBtn">รายละเอียด</button> </td>
+                                            <td> <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg">รายละเอียด</button></td>   
                                         </tr>
                                         <tr>
                                             <td> </td>
@@ -116,17 +117,9 @@
                                             <td> </td>
                                             <td> </td>
                                             <td> </td>
-                                            <td> </td>
+                                            <td> <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg">รายละเอียด</button> </td>
                                         </tr>
-                                        <tr>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                        </tr>
+                                       
                                     <tr>
 
                                 </table>
@@ -147,31 +140,48 @@
 
 </div>
 
+<!-- Modal 1 -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">รายละเอียด</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+        <div class="row mt-4">
+            <div class="col-md-10 mx-auto">
+                <!-- Timeline -->
+                <div class="timeline timeline-one">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                    <span class="icon icon-info icon-lg"><i class="bi bi-box-arrow-up"></i></i></span>
+                        <h5 class="my-3">เริ่มขอใช้งาน</h5>
+                        <p>...</p>
+                    </div>
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <h5 class="my-3">อัพเดตโฟร์งาน</h5>
+                        <p>Click here <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd2-example-modal-lg">Update</button></p>
+                    </div>
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <h5 class="my-3">เริ่มใช้งานจริง</h5>
+                        <p>...</p>
+                    </div>
 
-<!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-</a>
-
-<!-- Logout Modal-->
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
+                </div>
             </div>
-            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="login.html">Logout</a>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
+  </div>
 </div>
+<<<<<<< HEAD
 
 
 </body>
@@ -232,9 +242,41 @@
          </div>
       </div>
  </div>
-
+=======
+<!-- Modal 2 -->
+<div class="modal fade bd2-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Upload File </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body" >
+            <input type="file" id="fileInput">
+            <button id="uploadBtn" class="btn btn-success" >Upload</button>
+        </div>
+        <div id="progressBar">
+        <div id="progress"></div>
+    </div>
+  </div>
 </div>
+   
+>>>>>>> 01261acb657f899c61524061285636bf1557c137
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link href="{{ asset('admin/css/sb-admin-2.min.css') }}" rel="stylesheet"></link>
+<link href="{{ asset('admin/css/bootstrap.min.css') }}" rel="stylesheet"></link>
+<link href="{{ asset('admin/css/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css"></link>
+<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('js/jquery.min.js') }}"></script>
+<link rel='stylesheet' href='https://demo.themesberg.com/pixel-pro/css/pixel.css'></link>
+
+<<<<<<< HEAD
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -261,4 +303,6 @@ modal.style.display = "none";
 }
 </script>
 </script>
+=======
+>>>>>>> 01261acb657f899c61524061285636bf1557c137
 </x-app-layout>

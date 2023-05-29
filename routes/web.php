@@ -42,8 +42,14 @@ Route::get('/wrequest',function(){
     return view('wrequest');
 })->name('wrequest');
 
+<<<<<<< HEAD
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::post('/',[RequestController::class,'addRequest']);
+=======
+Route::get('/update',function(){
+    return view('update');
+})->name('update');
+>>>>>>> 01261acb657f899c61524061285636bf1557c137
