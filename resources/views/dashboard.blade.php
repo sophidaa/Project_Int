@@ -1,5 +1,8 @@
+@php
+use App\Http\Controllers\RequestController;
+use App\Http\Controllers\ShowRequestController;
+@endphp
 <x-app-layout>
-    
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -101,35 +104,18 @@
                                             <th> จัดการ (อนุมัติ/ไม่อนุมัติ)</th>
                                         </tr>
                                     </thead>
+                                    <tbody>
+                                        
                                         <tr>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
-                                        <tr>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                        </tr>
-                                        <tr>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                        </tr>
-                                    <tr>
-
+                                        
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
