@@ -108,8 +108,7 @@
                                             <td> </td>
                                             <td> </td>
                                             <td> </td>
-                                            <td>  <button  class="btn btn-success btn-user btn-block" id="myBtn" >รายละเอียด </button> </td>
-                                                
+                                            <td> <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg">รายละเอียด</button></td>   
                                         </tr>
                                         <tr>
                                             <td> </td>
@@ -118,17 +117,9 @@
                                             <td> </td>
                                             <td> </td>
                                             <td> </td>
-                                            <td> </td>
+                                            <td> <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg">รายละเอียด</button> </td>
                                         </tr>
-                                        <tr>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                            <td> </td>
-                                        </tr>
+                                       
                                     <tr>
 
                                 </table>
@@ -149,168 +140,77 @@
 
 </div>
 
-
-<!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-</a>
-
-<!-- Logout Modal-->
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="login.html">Logout</a>
-            </div>
+<!-- Modal 1 -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">รายละเอียด</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
         </div>
-    </div>
-</div>
-
-
-</body>
-    <link href="{{ asset('admin/css/sb-admin-2.min.css') }}" rel="stylesheet"></link>
-  <link href="{{ asset('admin/css/bootstrap.min.css') }}" rel="stylesheet"></link>
-  <link href="{{ asset('admin/css/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css"></link>
-  <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('js/jquery.min.js') }}"></script>
-  <link rel='stylesheet' href='https://demo.themesberg.com/pixel-pro/css/pixel.css'>
-  
-
-    <div id="myModal" class="modal">
- <!-- Modal content -->
-    <div class="modal-dialog-scrollable .modal-content" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="demoModalLabel">รายละเอียด อปท.</h5>
-								<button type="button" class="close" data-dismiss="modal" aria- 
-                                label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-						</div>
-						<div class="modal-body">
-                            
-
-                            <!-- Title  -->
-                                <div class="row">
-                                <div class="col-md-4 text-center mx-auto">
-                            </div>
-                        </div>
-                                <div class="row mt-4">
-                                <div class="col-md-10 mx-auto">
-                                <!-- Timeline -->
-                                    <div class="timeline timeline-one">
-                                <!-- Timeline Item 1 -->
-                                    <div class="timeline-item">
-                                        <h5 class="my-3">เริ่มขอใช้งาน</h5>
-                                        <p>เริ่มขอใช้งาน (รายละเอียด ผู้ขอ)วันที</p>
-                                    </div>
-                                <!-- Timeline Item 2 -->
-                                    <div class="timeline-item">
-                                        <h5 class="my-3">อัพเดตโฟร์งาน</h5>
-                                        <button class = "btn btn-warning" id="openModalBtn">Open Modal</button>
-                                        
-                                        <body>
-                                            <div id="updateModal" class="modal">
-                                                <div class="modal-dialog-scrollable .modal-content" role="document">
-                                                    <div class="modal-content">
-                                                        <span class="close">&times;</span>
-                                                        <h2>Upload File Progress</h2>
-                                                        <input type="file" id="fileInput">
-                                                        <button id="uploadBtn">Upload</button>
-                                                        <div id="progressBar">
-                                                            <div id="progress"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </body>
-                                    </div>
-                                <!-- Timeline Item 3 -->
-                                    <div class="timeline-item">
-                                        <h5 class="my-3">เริ่มใช้จริง</h5>
-                                        <p>เริ่มใช้จริง (รายละเอียด ไฟล์ pdf) วันที</p>
-                                    </div>
-                                </div>
-                            <!--End of Timeline-->
-                        </div>
+        <div class="modal-body">
+        <div class="row mt-4">
+            <div class="col-md-10 mx-auto">
+                <!-- Timeline -->
+                <div class="timeline timeline-one">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                    <span class="icon icon-info icon-lg"><i class="bi bi-box-arrow-up"></i></i></span>
+                        <h5 class="my-3">เริ่มขอใช้งาน</h5>
+                        <p>...</p>
                     </div>
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <h5 class="my-3">อัพเดตโฟร์งาน</h5>
+                        <p>Click here <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd2-example-modal-lg">Update</button></p>
+                    </div>
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <h5 class="my-3">เริ่มใช้งานจริง</h5>
+                        <p>...</p>
+                    </div>
+
                 </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
+  </div>
+</div>
+<!-- Modal 2 -->
+<div class="modal fade bd2-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Upload File </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body" >
+            <input type="file" id="fileInput">
+            <button id="uploadBtn" class="btn btn-success" >Upload</button>
+        </div>
+        <div id="progressBar">
+        <div id="progress"></div>
+    </div>
+  </div>
+</div>
+   
 
-<script>
-
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[1];
-
-
-    var closeButton = document.getElementsByClassName('close')[1];
-    var uploadButton = document.getElementById('uploadBtn');
-    var fileInput = document.getElementById('fileInput');
-    var progressBar = document.getElementById('progress');
-
-
-    // When the user clicks the button, open the modal
-    btn.onclick = function() {
-    modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-    modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-    if (event.target == modal) {
-    modal.style.display = "none";
-    }
-    }
-</script>
-
-<script>
-
-    var updatemodal = document.getElementById('updateModal');
-
-    var updatebtn = document.getElementById("openModalBtn");
-
-    openModalBtn.addEventListener('click', function() {
-    modal.style.display = 'block';
-    });
-
-    closeButton.addEventListener('click', function() {
-    modal.style.display = 'none';
-    });
-
-    window.addEventListener('click', function(event) {
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
-    });
-
-    uploadButton.addEventListener('click', function() {
-    // Perform file upload and progress tracking logic here
-    // You can use JavaScript's File API or AJAX requests to handle the file upload and track progress
-    });
-</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link href="{{ asset('admin/css/sb-admin-2.min.css') }}" rel="stylesheet"></link>
+<link href="{{ asset('admin/css/bootstrap.min.css') }}" rel="stylesheet"></link>
+<link href="{{ asset('admin/css/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css"></link>
+<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('js/jquery.min.js') }}"></script>
+<link rel='stylesheet' href='https://demo.themesberg.com/pixel-pro/css/pixel.css'></link>
 
 </x-app-layout>
